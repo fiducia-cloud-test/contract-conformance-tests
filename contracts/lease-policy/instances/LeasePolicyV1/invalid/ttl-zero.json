@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "resource": "lock/order-42",
+  "lease_ttl_seconds": 0,
+  "quorum": 3,
+  "renewable": true
+}
