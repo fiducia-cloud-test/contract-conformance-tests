@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/fiducia-cloud-test/contract-conformance-tests/contracts/lease-policy/authored.schema.json",
+  "$defs": {
+    "LeasePolicyV1": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "LeasePolicyV1",
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 1
+        },
+        "resource": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "lease_ttl_seconds": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 86400
+        },
+        "quorum": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 7
+        },
+        "renewable": {
+          "type": "boolean"
+        }
+      },
+      "required": ["version", "resource", "lease_ttl_seconds", "quorum"],
+      "unevaluatedProperties": false
+    }
+  }
+}
