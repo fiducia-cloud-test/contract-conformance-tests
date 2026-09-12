@@ -17,7 +17,7 @@ permissions:
 
 jobs:
   peer-authority:
-    uses: flags-2-env-test/contract-conformance-tests/.github/workflows/peer-authority-convergence.yml@ffaaa6bb025de65ea4440d78c61722adc94ac090
+    uses: flags-2-env-test/contract-conformance-tests/.github/workflows/peer-authority-convergence.yml@6b34eb2d10ae7f90d47dea710cce472d14d5aba1
     with:
       typespec_path: contracts/lease-policy/main.tsp
       schema_path: contracts/lease-policy/authored.schema.json
