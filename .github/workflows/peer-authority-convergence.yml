@@ -17,8 +17,9 @@ permissions:
 
 jobs:
   peer-authority:
-    uses: flags-2-env-test/contract-conformance-tests/.github/workflows/peer-authority-convergence.yml@62fd9f2b9bb769eb42bccd5e7bd8196cce18c974
+    uses: flags-2-env-test/contract-conformance-tests/.github/workflows/peer-authority-convergence.yml@7756eb9b08ec4909c4acb8ed3cef59f4280028bd
     with:
       typespec_path: contracts/lease-policy/main.tsp
       schema_path: contracts/lease-policy/authored.schema.json
       instances_path: contracts/lease-policy/instances
+      expected_declarations_json: '["FiduciaLeasePolicy.LeasePolicyV1"]'
